@@ -19,7 +19,7 @@ export const ICONS = {
     YOUTUBE: <FaYoutube></FaYoutube>, 
 }
 
-export const SOCIALLINKS = {
+export const SOCIAL_LINKS = {
     TWITTER: '/#',
     FACEBOOK: '/#',
     LINKEDIN: '/#',

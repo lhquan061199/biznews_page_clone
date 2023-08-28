@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ROUTES } from "../../constants";
-import { SOCIALLINKS } from "../../constants";
+import { SOCIAL_LINKS } from "../../constants";
 import { ICONS } from "../../constants";
 
 const navBarTop = [
@@ -23,12 +23,12 @@ const navBarTop = [
 ];
 
 const iconNavbarTop = [
-  { display: ICONS.TWITTER, link: SOCIALLINKS.TWITTER },
-  { display: ICONS.FACEBOOK, link: SOCIALLINKS.FACEBOOK },
-  { display: ICONS.LINKEDIN, link: SOCIALLINKS.LINKEDIN },
-  { display: ICONS.INSTAGRAM, link: SOCIALLINKS.INSTAGRAM },
-  { display: ICONS.GOOGLE, link: SOCIALLINKS.GOOGLE },
-  { display: ICONS.YOUTUBE, link: SOCIALLINKS.YOUTUBE },
+  { display: ICONS.TWITTER, link: SOCIAL_LINKS.TWITTER },
+  { display: ICONS.FACEBOOK, link: SOCIAL_LINKS.FACEBOOK },
+  { display: ICONS.LINKEDIN, link: SOCIAL_LINKS.LINKEDIN },
+  { display: ICONS.INSTAGRAM, link: SOCIAL_LINKS.INSTAGRAM },
+  { display: ICONS.GOOGLE, link: SOCIAL_LINKS.GOOGLE },
+  { display: ICONS.YOUTUBE, link: SOCIAL_LINKS.YOUTUBE },
 ];
 
 function NavbarTop() {
