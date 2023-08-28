@@ -1,8 +1,63 @@
+import { Link } from "react-router-dom";
+import { ROUTES } from "../../constants";
+import { SOCIALLINKS } from "../../constants";
+import { ICONS } from "../../constants";
+
+const navBarTop = [
+  {
+    content: "Monday, January 1, 2045",
+    link: ROUTES.DATE,
+  },
+  {
+    content: "Advertise",
+    link: ROUTES.DATE,
+  },
+  {
+    content: "Contact",
+    link: ROUTES.DATE,
+  },
+  {
+    content: "Login",
+    link: ROUTES.DATE,
+  },
+];
+
+const iconNavbarTop = [
+  { display: ICONS.TWITTER, link: SOCIALLINKS.TWITTER },
+  { display: ICONS.FACEBOOK, link: SOCIALLINKS.FACEBOOK },
+  { display: ICONS.LINKEDIN, link: SOCIALLINKS.LINKEDIN },
+  { display: ICONS.INSTAGRAM, link: SOCIALLINKS.INSTAGRAM },
+  { display: ICONS.GOOGLE, link: SOCIALLINKS.GOOGLE },
+  { display: ICONS.YOUTUBE, link: SOCIALLINKS.YOUTUBE },
+];
+
 function NavbarTop() {
-    return (
-    <div className="bg-slate-950, h-10, text-red-100">
-        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-    </div>  );
+  return (
+    <div className="w-full h-10 px-12 bg-[var(--dark)] text-[var(--text-body)] text-[12.8px] font-normal tracking-normal">
+      <div className="h-full flex justify-between">
+        <ul className="flex items-center">
+          {navBarTop.map((item, index) => (
+            <li
+              key={index}
+              className="p-2 border-l border-[var(--border-secondary)] first:border-l-0"
+            >
+              <Link to={item.link}>{item.content}</Link>
+            </li>
+          ))}
+        </ul>
+
+        <ul className="flex items-center">
+          {iconNavbarTop.map((item, index) => (
+            <li key={index} className="px-2">
+              <a href={item.link} className="px-2">
+                {item.display}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
 }
 
 export default NavbarTop;
