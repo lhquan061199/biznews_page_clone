@@ -1,4 +1,4 @@
-import "./App.css";
+import "./assets/style/style.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ROUTES } from "./constants";
 import Layout from "./layouts";
@@ -37,11 +37,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /* <Routes>
-<Route
-path={ROUTES_AUTHEN.PAYMENT_COMPLETE}
-element={<PaymentComplete />}
-/> */
-}
