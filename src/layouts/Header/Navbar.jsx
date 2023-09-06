@@ -8,15 +8,10 @@ import categoryReducer from "../../slices/categorySlice";
 import { getCategory } from "../../service/categoriesService";
 import { useEffect } from "react";
 
-function Navbar() {
-  const category = useSelector((state) => state.category);
-  const dispatch = useDispatch();
-  dispatch(getCategory());
-
-  const menu = category.categories;
+function Navbar({ category }) {
   const navItems = [
     { title: "HOME", to: ROUTES.HOME, subMenu: false },
-    { title: "CATEGORY", to: false, subMenu: menu },
+    { title: "CATEGORY", to: false, subMenu: category },
     { title: "CONTACT", to: ROUTES.CONTACT, subMenu: false },
   ];
 

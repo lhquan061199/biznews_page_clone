@@ -2,7 +2,7 @@ import { AiFillCaretDown } from "react-icons/ai";
 
 function Dropdown({ children, menu, className }) {
   return (
-    <div className="w-full h-full relative group">
+    <div className="w-full h-full relative group cursor-pointer">
       <div className={`${className}`}>
         <div className="flex h-full items-center">
           {children}
