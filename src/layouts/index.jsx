@@ -12,12 +12,12 @@ function Layout({ children }) {
 
   const category = useSelector((state) => state.category);
 
-  const menu = category.categories;
+  const categories = category.categories;
   return (
     <>
-      <Header category={menu}></Header>
+      <Header category={categories}></Header>
       {children}
-      <Footer category={menu}></Footer>
+      <Footer category={categories}></Footer>
     </>
   );
 }

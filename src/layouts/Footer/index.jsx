@@ -51,6 +51,7 @@ function Footer({ category }) {
   return (
     <div className="w-full mt-12 pt-12 bg-[var(--bg-dark)]">
       <div className="h-[416px] w-full py-6 mx-[-8px] flex text-[#FFF] px-12">
+        {/* GET IN TOUCH */}
         <div className="basis-3/12 px-2 mb-12">
           <h5 className="mb-6 text-xl font-bold">GET IN TOUCH</h5>
           {contact.map((item, index) => (
@@ -72,6 +73,7 @@ function Footer({ category }) {
             ))}
           </div>
         </div>
+        {/* POPULAR NEWS */}
         <div className="basis-3/12 px-2 mb-12">
           <h5 className="mb-6 text-xl font-bold">POPULAR NEWS</h5>
           {topView &&
@@ -85,6 +87,7 @@ function Footer({ category }) {
               </div>
             ))}
         </div>
+        {/* CATEGORIES */}
         <div className="basis-3/12 px-2 mb-12">
           <h5 className="mb-6 text-xl font-bold">CATEGORIES</h5>
           <div className="flex flex-wrap gap-2">
@@ -96,6 +99,7 @@ function Footer({ category }) {
               ))}
           </div>
         </div>
+        {/* PLIKR PHOTOS */}
         <div className="basis-3/12 px-2 mb-12">
           <h5 className="mb-6 text-xl font-bold">PLIKR PHOTOS</h5>
           <div className="flex flex-wrap">
@@ -109,7 +113,7 @@ function Footer({ category }) {
           </div>
         </div>
       </div>
-
+      {/* DESIGN BY */}
       <div className="h-[72px] bg-[#111111] flex items-center justify-center">
         <p>
           &copy;
