@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -30,6 +36,8 @@
   --text-dark:#1E2024;
   --border-secondary: #31404b;
 
+  --btn-secondary: #31404b;
+
   --font-family-sans-serif: "Montserrat", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
@@ -39,5 +47,35 @@ body {
   font-family: var(--font-family-sans-serif);
   font-weight: 400;
   line-height: 1.5;
- 
+  font-size: 16px;
+  color: #9A9DA2;
 }
+
+.btn-primary {
+  color: var(--text-dark);
+  background-color: var(--bg-primary);
+  cursor: pointer;
+  padding: 4px;
+  height: 20px;
+  font-size: 12px;
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background-color: #cca300;
+  
+}
+
+.primary-hover:hover {
+  color: #cca300;
+}
+
+a {
+  cursor: pointer;
+}
+
+
