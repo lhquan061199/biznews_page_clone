@@ -117,7 +117,7 @@ function Footer({ category }) {
             href="#"
             className="text-[var(--primary)] hover:underline primary-hover"
           >
-            Your Site Name
+            quan@2023
           </a>
           . &nbsp;All Rights Reserved. Design by&nbsp;
           <a
