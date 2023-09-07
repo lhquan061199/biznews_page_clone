@@ -22,8 +22,12 @@
   --dark: #1e2024;
 
   --bg-white: #fff;
+  --bg-dark: #1E2024;
+  --bg-primary:#FFCC00;
+
   --text-body: #9a9da2;
   --text-secondary:  #31404B;
+  --text-dark:#1E2024;
   --border-secondary: #31404b;
 
   --font-family-sans-serif: "Montserrat", sans-serif;
